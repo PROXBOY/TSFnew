@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` *INNEXIA* `your group super bot`
+`Hello` 🤗 `I am` *TSF ROBOT* `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
@@ -101,10 +101,7 @@ HELP_STRINGS = """
 """
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @SelfisXD \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """No need sir/mam 😊"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -349,15 +346,13 @@ def innexiabot_about_callback(update, context):
     query = update.callback_query
     if query.data == "innexiabot_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *INNEXIA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *TSF ROBOT🤖*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_innexiabot's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💞Repository](https://github.com/TeamInnexia/innexiabot).
+                 \n❍ I check for admins' permissions before executing any command and more stuff.
                  \n\nIf you have any question about innexiabot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
